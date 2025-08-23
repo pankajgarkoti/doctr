@@ -23,6 +23,15 @@ uv run doctr generate --output ./documentation --diff HEAD~3 --model claude-3-5-
 # Initialize doctr config (creates .doctr.toml)
 uv run doctr init
 
+# Set up AI-powered comprehensive wiki documentation (default)
+uv run doctr setup
+
+# Set up with specific model
+uv run doctr setup --model claude-3-5-sonnet-20241022
+
+# Set up without AI (basic structure only)
+uv run doctr setup --no-ai
+
 # Run all tests
 uv run python -m unittest discover -s doctr/tests -v
 
