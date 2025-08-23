@@ -1,0 +1,8 @@
+default_model = "claude-3-5-haiku-20241022"
+output_dir = "docs"
+default_diff_target = "HEAD~1"
+use_ai = true
+include_usage_examples = true
+include_migration_guide = true
+include_changelog = true
+ignore_patterns = [ "*.pyc", "*.pyo", "__pycache__/*", ".git/*", "node_modules/*", "*.log", "*.tmp",]
